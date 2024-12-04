@@ -1,0 +1,9 @@
+
+### `requirements.txt`
+
+```text
+pandas
+numpy
+scanpy
+pegasus
+matplotlib
