@@ -1,10 +1,12 @@
-# Base pipeline
+# ICA base pipeline
 
-`Base pipeline` This package is designed for streamlined data integration. 
+`ICA base pipeline` This package is  for streamlined data processing and integration. 
 
 
 ## Installation
 To install the package, first clone the repository and then install using pip:
 
 ```bash
-pip install git+https://github.com/AdrienAntoinette/base_pipeline_v2.git
+git clone https://github.com/AdrienAntoinette/base_pipeline_v1.git
+cd base_pipeline_v1
+pip install -e .
