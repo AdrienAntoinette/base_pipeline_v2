@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: base_pipeline_v2
+Version: 0.0.2
+Summary: Our base pipeline for ICA
+Home-page: https://github.com/AdrienAntoinette/base_pipeline_v2
+Author: ICA team
+Author-email: aantoinetteadrien@mgh.harvard.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

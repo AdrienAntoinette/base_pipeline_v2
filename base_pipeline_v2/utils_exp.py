@@ -589,7 +589,8 @@ def run_mcv_functions_sc(mcv_data, savepath, iteration= 'mcv', figsize=[10,3], r
         plt.title("Optimal PCs = " + str(optimal_k))
         plt.tight_layout()
         plt.savefig(os.path.join(figdir, f"{save_name}_pca_mcv.png"))
-        plt.close()
+        #plt.close()
+        plt.show()
 
         plt.rcParams.update({'font.size': 10})
 

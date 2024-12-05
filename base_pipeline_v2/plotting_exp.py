@@ -58,7 +58,7 @@ def plot_obs_feature_on_umap_separately(data, feature, save_file, size=None):
         # Save the figure
         fig.savefig(save_file, bbox_inches='tight')
         plt.show()
-        plt.close()
+        #plt.close()
     else:
         print(f"Feature '{feature}' has more than 20 unique values. Skipping individual plots.")
 
@@ -152,7 +152,7 @@ def plot_calc_metrics(metrics_list, index_names, savepath=None, min_max_scale=Tr
 
     # Display the plot
     plt.show()
-    plt.close()
+    #plt.close()
 
 
 def compare_clusters(adata1, adata2, cluster_label1, cluster_label2, label1_name, label2_name, savepath=None):
@@ -315,6 +315,8 @@ def visualize_general_markers(adata, max_cells_plot, col,
                           wspace=0.4, ncols=4, return_fig=True)
     plt.savefig(gMarkers + "/General_markers.pdf", bbox_inches='tight', pad_inches=0, dpi=300)
 
+    plt.show()
+
     if save_output:
         # Save the final adata object as .h5ad
         output_folder = os.path.join(save_dir, "output")
@@ -346,6 +348,7 @@ def create_hexbin_plot(data, dataset_name='',group='', savepath='', axlines=[], 
     # g.fig.suptitle('Hexbin plot of gene count vs percent mitochondrial reads by sample', wrap=True)
     plt.tight_layout()
     # Save the figure
+    #plt.show()
     plt.savefig(savepath+'/'+dataset_name+ group+'_hexbin_plot.png')
-    plt.close()
+    plt.show()
 
