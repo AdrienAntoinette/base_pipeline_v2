@@ -155,7 +155,7 @@ def feature_selection(adata,group_by,batch_key, bin_path, lineage, save_dir, min
 
     print("****** Computing highly variable genes...")
     HVGdf = get_HVG(adata_forHVG, groupby=group_by, batch_key=batch_key, min_number_cells=min_number_cells,
-                    flavor='seurat', n_top_genes=1500)
+                    flavor='seurat', n_top_genes=n_top_genes)
 
     # Save the HVGdf as a CSV file
     hvg_folder = os.path.join(save_dir, "hvg")
