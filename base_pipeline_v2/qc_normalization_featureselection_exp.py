@@ -134,7 +134,7 @@ def normalize(adata):
 
 
 # Feature selection
-def feature_selection(adata,group_by,batch_key, bin_path, lineage, save_dir, min_number_cells=5, HVG_min_mean=0.01, HVG_min_disp=0.5):
+def feature_selection(adata,group_by,batch_key, bin_path, lineage, save_dir, min_number_cells=5, HVG_min_mean=0.01, HVG_min_disp=0.5,n_top_genes=3000):
     print("****** Filtering genes for feature selection...")
     tcr_genes_df = pd.read_csv(os.path.join(bin_path, "TCR_genes.txt"), sep="\t")
     bcr_genes_df = pd.read_csv(os.path.join(bin_path, "BCR_genes.txt"), sep="\t")
